@@ -162,6 +162,11 @@ ul, ol {
 
 #motivation .content h1, #motivation .content p {
     font-family: Big John;
+    font-size: 3.1rem;
     color: #DB7B10;
-    text-shadow: 0.01rem 0.01rem 1rem #000;
+    text-shadow: 0 1.3rem 1.5rem #0f0f0f;
+}
+
+#motivation .content p {
+    font-size: 1.5rem;
 }
