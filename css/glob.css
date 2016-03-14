@@ -83,86 +83,20 @@ ul, ol {
 
 #header #navigation .content nav .menu li {
     display: inline-block;
-    border-right: solid 1px #C3C3C3;
-    padding: 0 1rem;
+    padding: 0 0;
     line-height: 1.5rem;
-}
-
-#header #navigation .content nav .menu li:first-child {
-    border-left: solid 1px #C3C3C3;
 }
 
 #header #navigation .content nav .menu li a {
 	padding: 0 20px;
 	height: 45px;
-	line-height: 45px;
 }
 
-/* Effect Border Switch*/
-#header #navigation .content nav .menu li a::before,
-#header #navigation .content nav .menu li a::after {
-	position: absolute;
-	width: 45px;
-	height: 2px;
-	background: #fff;
-	content: '';
-	opacity: 0.2;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-	pointer-events: none;
-}
-
-#header #navigation .content nav .menu li a::before {
-	top: 0;
-	left: 0;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	transform: rotate(90deg);
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	transform-origin: 0 0;
-}
-
-#header #navigation .content nav .menu li a::after {
-	right: 0;
-	bottom: 0;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	transform: rotate(90deg);
-	-webkit-transform-origin: 100% 0;
-	-moz-transform-origin: 100% 0;
-	transform-origin: 100% 0;
-}
-
-#header #navigation .content nav .menu li a:hover::before,
-#header #navigation .content nav .menu li a:hover::after,
-#header #navigation .content nav .menu li a:focus::before,
-#header #navigation .content nav .menu li a:focus::after {
-	opacity: 1;
-}
-
-#header #navigation .content nav .menu li a:hover::before,
-#header #navigation .content nav .menu li a:focus::before {
-	left: 50%;
-	-webkit-transform: rotate(0deg) translateX(-50%);
-	-moz-transform: rotate(0deg) translateX(-50%);
-	transform: rotate(0deg) translateX(-50%);
-}
-
-#header #navigation .content nav .menu li a:hover::after,
-#header #navigation .content nav .menu li a:focus::after {
-	right: 50%;
-	-webkit-transform: rotate(0deg) translateX(50%);
-	-moz-transform: rotate(0deg) translateX(50%);
-	transform: rotate(0deg) translateX(50%);
-}
-
-/*#header #navigation .content nav .menu li a {
+#header #navigation .content nav .menu li a {
     color: #DB7B10;
     font-size: 1rem;
     font-weight: 300;
-}*/
+}
 
 #header #banner {
   width: 100%;
