@@ -214,7 +214,10 @@ SPLIT
 }
 
 #split .wrapTitle h1 {
-    margin: 0;
+    padding: 10px 20px;
     display: inline-block;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.6)
 }
 
