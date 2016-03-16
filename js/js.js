@@ -3,13 +3,17 @@
 $(document).ready(function () {
     "use strict";
     
+    /*******************
+    **                **
+    **     SPLIT      **
+    **                **
+    *******************/
+    
     $("#split").on("mousemove", function () {
         var width = $(window).width();
         var curPosX = event.pageX;
         
-        console.log(width);
-        
-        var minVal = width / 5;
+        var minVal = width / 3;
         
         var leftSplit = 100 / width * curPosX;
         var rightSplit = 100 - leftSplit;
@@ -43,10 +47,17 @@ $(document).ready(function () {
         }
     });
     
-    /*
-    $("#split").on("mouseout", function() {
-        $(this).children("#left-split").css( "width", "50%" );
-        $(this).children("#right-split").css( "width", "50%" );
+    
+    /*******************
+    **                **
+    **     TYPED      **
+    **                **
+    *******************/
+    
+    $(function(){
+        $("#aboutTyped").typed({
+            strings: ["Photography", "Web Design", "Programming", "Design"],
+            typeSpeed: 120
+        });
     });
-    */
 });
