@@ -55,9 +55,13 @@ $(document).ready(function () {
     *******************/
     
     $(function(){
-        $("#aboutTyped").typed({
-            strings: ["Photography", "Web Design", "Programming", "Design"],
-            typeSpeed: 120
+        $("#about-typed").typed({
+            strings: ["Photography^1000", "^1000Web Design^1000", "^1000Programming^1000", "^1000Design^1000"],
+            typeSpeed: 120,
+            loop: true,
+            loopCount: false,
+            startDelay: 1000,
+            backDelay: 750
         });
     });
 });

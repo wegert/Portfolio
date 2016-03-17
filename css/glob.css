@@ -45,9 +45,9 @@ ul, ol {
 
 .typed-cursor{
     opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
 }
 @keyframes blink{
     0% { opacity:1; }
@@ -165,8 +165,20 @@ ul, ol {
     margin-bottom: 0.3rem;
 }
 
-#header #banner .content #short-about h3 {
-    margin: 0;
+#header #banner .content #short-about h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#header #banner .content #short-about #about-typed {
+    font-weight: 500;
+}
+
+/*** ABOUT ***/
+
+#about .content {
+    text-align: center;
 }
 
 /*** MOTIVATION ***/
