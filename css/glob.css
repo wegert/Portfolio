@@ -182,22 +182,26 @@ ul, ol {
 /*** ABOUT ***/
 
 #about {
-    height: 30rem;
+    background-color: #f2f2f2;
 }
 
 #about .content {
-    height: 100%;
-    display: table;
+    text-align: center;
+    padding: 2rem;
 }
 
-#about .content .description {
-    display: table-cell;
+#about .content .bio-box {
+    margin: 0 auto;
+    width: 15rem;
+    height: 20rem;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 10px;
 }
 
-#about .content .description #short-bio {
-    vertical-align: middle;
-    text-align: left;
-    width: 40rem;
+#about .content .bio-box h1 {
+    
 }
 
 /*** MOTIVATION ***/
