@@ -182,26 +182,56 @@ ul, ol {
 /*** ABOUT ***/
 
 #about {
-    background-color: #f2f2f2;
+    background-color: #fff;
+    text-align: center;
 }
 
 #about .content {
-    text-align: center;
-    padding: 2rem;
+    display: inline;
+    height: 100%;
 }
 
 #about .content .bio-box {
-    margin: 0 auto;
-    width: 15rem;
-    height: 20rem;
+    margin: 20px 0;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 20rem;
+    background-color: rgba(240, 240, 240, 1);
     text-align: center;
-    border-radius: 10px;
+    display: inline-block;
 }
 
-#about .content .bio-box h1 {
-    
+#about .content .bio-box .bio-inner {
+    display: table;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+#about .content .bio-box .bio-inner .bio-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#about .content .bio-box .bio-inner .bio-text i.fa {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+#about .content .bio-box .bio-inner .bio-text .fa-mars {
+    color: rgba(13, 71, 161, 0.5);
+}
+
+#about .content .bio-box .bio-inner .bio-text .fa-mortar-board {
+    color: rgba(230, 81, 0, 0.5);
+}
+
+#about .content .bio-box .bio-inner .bio-text .fa-map-o {
+    color: rgba(183, 28, 28, 0.5);
+}
+
+#about .content .bio-box .bio-inner .bio-text h1, #about .content .bio-box .bio-inner .bio-text h3 {
+    margin: 0;
 }
 
 /*** MOTIVATION ***/
