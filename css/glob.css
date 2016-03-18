@@ -195,7 +195,6 @@ ul, ol {
     margin: 20px 0;
     padding: 20px;
     width: 20rem;
-    background-color: rgba(240, 240, 240, 1);
     text-align: center;
     display: inline-block;
 }
@@ -219,19 +218,19 @@ ul, ol {
 }
 
 #about .content .bio-box .bio-inner .bio-text .fa-mars {
-    color: rgba(13, 71, 161, 0.5);
+    color: rgba(219, 123, 16, 0.7);
 }
 
 #about .content .bio-box .bio-inner .bio-text .fa-mortar-board {
-    color: rgba(230, 81, 0, 0.5);
+    color: rgba(219, 123, 16, 0.7);
 }
 
 #about .content .bio-box .bio-inner .bio-text .fa-map-o {
-    color: rgba(183, 28, 28, 0.5);
+    color: rgba(219, 123, 16, 0.7);
 }
 
 #about .content .bio-box .bio-inner .bio-text h1, #about .content .bio-box .bio-inner .bio-text h3 {
-    margin: 0;
+    margin: 10px 0;
 }
 
 /*** MOTIVATION ***/
