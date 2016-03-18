@@ -13,7 +13,21 @@ $(document).ready(function () {
         var width = $(window).width();
         var curPosX = event.pageX;
         
-        var minVal = width / 3;
+        var widthLeftTitle = $("#left-split").find(".wrapTitle").children("h1").outerWidth();
+        var widthRightTitle = $("#right-split").find(".wrapTitle").children("h1").outerWidth();
+        
+        console.log(widthLeftTitle);
+        
+        var minVal;
+        
+        if (widthLeftTitle >= widthRightTitle) {
+            minVal = widthLeftTitle;
+        }
+        else {
+            minVal = widthRightTitle;
+        }
+        
+        console.log(minVal);
         
         var leftSplit = 100 / width * curPosX;
         var rightSplit = 100 - leftSplit;
@@ -23,9 +37,6 @@ $(document).ready(function () {
         
         var widthLeftSplit = $("#left-split").width();
         var widthRightSplit = $("#right-split").width();
-
-        var widthLeftTitle = $("#left-split").find(".wrapTitle").children("h1").width() + 100;
-        var widthRightTitle = $("#right-split").find(".wrapTitle").children("h1").width() + 100;
         
         var leftMin = 100 / width * minVal;
         var rightMax = 100 - leftMin;
