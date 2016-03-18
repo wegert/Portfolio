@@ -48,7 +48,6 @@ ul, ol {
 .content {
     width: 60rem;
     margin: 0 auto;
-    display: table;
 }
 
 .typed-cursor{
@@ -187,8 +186,18 @@ ul, ol {
 }
 
 #about .content {
+    text-align: center;
+}
+
+#about .content .bio-box {
+    text-align: center;
+}
+
+/*
+#about .content {
     display: inline;
     height: 100%;
+    width: 60rem;
 }
 
 #about .content .bio-box {
@@ -197,6 +206,12 @@ ul, ol {
     width: 20rem;
     text-align: center;
     display: inline-block;
+    border-radius: 5px;
+}
+
+#about .content .bio-box:hover {
+    background-color: #fcfcfc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #about .content .bio-box .bio-inner {
@@ -232,6 +247,7 @@ ul, ol {
 #about .content .bio-box .bio-inner .bio-text h1, #about .content .bio-box .bio-inner .bio-text h3 {
     margin: 10px 0;
 }
+*/
 
 /*** MOTIVATION ***/
 
