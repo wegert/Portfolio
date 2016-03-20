@@ -1,27 +1,29 @@
 // jQuery
 
+/*******************
+**                **
+**   TIME-LINE    **
+**                **
+*******************/
+
+/*
+$(function(){
+
+    $("#timeline-container").load('../timeline.svg',function(response){
+
+        $(this).addClass("svgLoaded");
+
+        if(!response){
+            // Error loading SVG!
+            // Make absolutely sure you are running this on a web server or localhost!
+        }
+
+    });
+});
+*/
+
 $(document).ready(function () {
     "use strict";
-    
-    /*******************
-    **                **
-    **   TIME-LINE    **
-    **                **
-    *******************/
-    
-    $(function(){
-
-        $("#stage").load('interactive.svg',function(response){
-
-            $(this).addClass("svgLoaded");
-
-            if(!response){
-                // Error loading SVG!
-                // Make absolutely sure you are running this on a web server or localhost!
-            }
-
-        });
-    });
     
     /*******************
     **                **

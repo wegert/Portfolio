@@ -280,9 +280,7 @@ ul, ol {
 }
 
 
-/********
-SPLIT
-********/
+/*** SPLIT ***/
 
 #split {
     width: 100%;
@@ -323,3 +321,26 @@ SPLIT
     background-color: rgba(0, 0, 0, 0.6)
 }
 
+
+/*** TIMELINE ***/
+
+#timeline .content #timeline-container {
+    width: 663px;
+    height: 1061px;
+}
+
+#vs {
+    transform-origin: 265,744px 130,718px;
+}
+
+#vs-badge {
+    transform-origin: 138,497px 130,718px;
+}
+
+#vs-title {
+    transform-origin: 103,792px 49,7236px;
+}
+
+#vs-details {
+    transform-origin: 143,134px 136,653px;
+}
