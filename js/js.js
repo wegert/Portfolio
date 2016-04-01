@@ -27,6 +27,21 @@ $(document).ready(function () {
     
     /*******************
     **                **
+    **  HEADER IMAGE  **
+    **                **
+    *******************/
+    
+    var ProfileImgWidht = $("#profile-image").width();   
+    $("#profile-image").height(ProfileImgWidht);
+    
+    $( window ).resize(function() {
+        var ProfileImgWidht = $("#profile-image").width();   
+        $("#profile-image").height(ProfileImgWidht);
+    });
+    
+    
+    /*******************
+    **                **
     **     SPLIT      **
     **                **
     *******************/
