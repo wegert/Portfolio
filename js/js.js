@@ -42,6 +42,22 @@ $(document).ready(function () {
     
     /*******************
     **                **
+    **     ABOUT      **
+    **                **
+    *******************/
+    
+    $(".bio-box").on("mouseover", function () {
+        $(this).children(".bio-inner-hover").css( "display", "table");
+        $(this).children(".bio-inner").css( "display", "none");
+    });
+    
+    $(".bio-box").on("mouseleave", function () {
+        $(this).children(".bio-inner-hover").css( "display", "none");
+        $(this).children(".bio-inner").css( "display", "table");
+    });
+    
+    /*******************
+    **                **
     **     SPLIT      **
     **                **
     *******************/
