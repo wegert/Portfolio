@@ -100,11 +100,14 @@ ul, ol {
 }
 
 #header .navigation-sticky {
-    background-color: rgba(255, 255, 255, 0.6)
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid #DB7B10;
+    box-shadow: 10px 0px 20px #000;
 }
 
 #header #navigation {
-  padding: 1.1rem 0;
+    padding: 0.5rem 0;
 }
 
 #header #navigation .content {

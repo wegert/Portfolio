@@ -47,11 +47,13 @@ $(document).ready(function () {
     *******************/
     
     $(".bio-box").on("mouseover", function () {
+        /*$(this).css( "background-color", "#fcfcfc").css( "box-shadow", "5px 5px 10px rgba(0, 0, 0, 0.3)").fadeIn(2000);*/
         $(this).children(".bio-inner-hover").css( "display", "table");
         $(this).children(".bio-inner").css( "display", "none");
     });
     
     $(".bio-box").on("mouseleave", function () {
+        /*$(this).css( "background-color", "none").css( "box-shadow", "none").fadeOut(1000);*/
         $(this).children(".bio-inner-hover").css( "display", "none");
         $(this).children(".bio-inner").css( "display", "table");
     });
