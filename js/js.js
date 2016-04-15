@@ -31,6 +31,13 @@ $(document).ready(function () {
     **                **
     *******************/
     
+    var width = $(window).width();
+    var height = $(window).height();
+    
+    if ( width < height) {
+        $("#profile-image").css("width", "60%");
+    }
+    
     var ProfileImgWidht = $("#profile-image").width();   
     $("#profile-image").height(ProfileImgWidht);
     
