@@ -23,7 +23,52 @@ $(function(){
 */
 
 $(document).ready(function () {
-    "use strict";
+    /*"use strict";*/
+    
+    /*******************
+    **                **
+    **   NAV SCROLL   **
+    **                **
+    *******************/
+    
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('.navigation').outerHeight();
+
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            $('#header .navigation').removeClass('navigation-sticky nav-down').addClass('nav-up');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('#header .navigation').removeClass('nav-up').addClass('navigation-sticky nav-down');
+            }
+        }
+
+        lastScrollTop = st;
+    }
     
     /*******************
     **                **
@@ -78,8 +123,6 @@ $(document).ready(function () {
         var widthLeftTitle = $("#left-split").find(".wrapTitle").children("h1").outerWidth();
         var widthRightTitle = $("#right-split").find(".wrapTitle").children("h1").outerWidth();
         
-        console.log(widthLeftTitle);
-        
         var minVal;
         
         if (widthLeftTitle >= widthRightTitle) {
@@ -88,8 +131,6 @@ $(document).ready(function () {
         else {
             minVal = widthRightTitle;
         }
-        
-        console.log(minVal);
         
         var leftSplit = 100 / width * curPosX;
         var rightSplit = 100 - leftSplit;
