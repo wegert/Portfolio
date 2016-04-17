@@ -181,7 +181,7 @@ ul, ol {
     margin: 0 auto;
     width: 27%;
     border-radius: 50%;
-    background-image: url('../img/profile.png');
+    background-image: url('../img/profile.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -224,6 +224,8 @@ ul, ol {
     height: 240px;
     text-align: center;
     display: inline-block;
+    -webkit-transition: linear 0.25s; /* For Safari 3.1 to 6.0 */
+    transition: linear 0.25s;
 }
 
 #about .content .bio-box:hover {
