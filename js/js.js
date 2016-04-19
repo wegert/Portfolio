@@ -27,6 +27,26 @@ $(document).ready(function () {
     
     /*******************
     **                **
+    **   NAVIGATION   **
+    **                **
+    *******************/
+    
+    $('ul.menu').find('a').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        var $a_href = $(this).attr('href');
+        var $anchor = $($a_href).offset();
+        
+        //window.scrollTo($anchor.left,$anchor.top);
+        $('body').animate({ scrollTop: $anchor.top }, 1000);
+        
+        return false;
+    });
+    
+    
+    /*******************
+    **                **
     **   NAV SCROLL   **
     **                **
     *******************/
@@ -39,10 +59,6 @@ $(document).ready(function () {
 
     $(window).scroll(function(event){
         didScroll = true;
-        
-        if($(this).scrollTop() <= 69) {
-            $('#header .navigation-sticky').fadeOut(500);
-        }
     });
 
     setInterval(function() {
@@ -53,6 +69,12 @@ $(document).ready(function () {
     }, 250);
 
     function hasScrolled() {
+        
+        if($(this).scrollTop() <= $('#header').outerHeight() ) {
+            $('#header .navigation-sticky').fadeOut(500);
+            return;
+        }
+        
         var st = $(this).scrollTop();
 
         // Make sure they scroll more than delta
