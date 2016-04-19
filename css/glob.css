@@ -208,6 +208,7 @@ ul, ol {
     font-weight: 300;
 }
 
+
 /*** ABOUT ***/
 
 #about {
@@ -263,15 +264,7 @@ ul, ol {
     margin: 20px 0;
 }
 
-#about .content .bio-box .bio-inner .bio-text .fa-mars {
-    color: rgba(219, 123, 16, 0.7);
-}
-
-#about .content .bio-box .bio-inner .bio-text .fa-mortar-board {
-    color: rgba(219, 123, 16, 0.7);
-}
-
-#about .content .bio-box .bio-inner .bio-text .fa-map-o {
+#about .fa {
     color: rgba(219, 123, 16, 0.7);
 }
 
@@ -308,6 +301,33 @@ ul, ol {
 #motivation .content p {
     font-size: 1.5rem;
     text-shadow: -1px -1px 0 white;
+}
+
+
+/*** PROJECTS ***/
+
+#web, #design, #photography {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#web .content, #design .content, #photography .content {
+    display: inline;
+    height: 100%;
+    width: 60rem;
+}
+
+#web .project-container, #design .project-container, #photography .project-container {
+    padding: 20px;
+}
+
+#web .project-item, #design .project-item, #photography .project-item {
+    margin: 20px;
+    width: 20rem;
+    height: 15rem;
+    text-align: center;
+    display: inline-block;
+    background-color: black;
 }
 
 

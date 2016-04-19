@@ -71,7 +71,7 @@ $(document).ready(function () {
     function hasScrolled() {
         
         if($(this).scrollTop() <= $('#header').outerHeight() ) {
-            $('#header .navigation-sticky').fadeOut(500);
+            $('#header .navigation-sticky').hide();
             return;
         }
         
