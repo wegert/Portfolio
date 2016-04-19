@@ -105,6 +105,7 @@ ul, ol {
 }
 
 #header .navigation-sticky {
+    display: none;
     top: 0;
     position: fixed;
     background-color: rgba(255, 255, 255, 1);
@@ -114,11 +115,11 @@ ul, ol {
     z-index: 2000;
 }
 
-#header .navigation {
+#header .navigation, #header .navigation-sticky {
     padding: 0.5rem 0;
 }
 
-#header .navigation .content {
+#header .navigation .content, #header .navigation-sticky .content {
     width: 60rem;
     margin: 0 auto;
     padding: 0 20px;
@@ -129,10 +130,7 @@ ul, ol {
     width:1%;
 }
 
-#header .navigation .content .logo a {
-}
-
-#header .navigation .content .logo img {
+#header .content .logo img {
   height: 3rem;
   margin: 0.3rem 0 0 0;
 }
@@ -142,23 +140,29 @@ ul, ol {
   vertical-align: middle
 }
 
-#header .navigation .content nav .menu {
+#header .content nav .menu {
   text-align: right;
 }
 
-#header .navigation .content nav .menu li {
+#header .content nav .menu li {
     display: inline-block;
     padding: 0 0;
     line-height: 1.5rem;
 }
 
-#header .navigation .content nav .menu li a {
+#header .content nav .menu li a {
 	padding: 0 20px;
 	height: 45px;
 }
 
 #header .navigation .content nav .menu li a {
     color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#header .navigation-sticky .content nav .menu li a {
+    color: #DB7B10;
     font-size: 1rem;
     font-weight: 300;
 }
