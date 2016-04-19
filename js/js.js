@@ -34,11 +34,15 @@ $(document).ready(function () {
     // Hide Header on on scroll down
     var didScroll;
     var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('.navigation').outerHeight() * 2;
+    var delta = 69;
+    var navbarHeight = $('.navigation').outerHeight();
 
     $(window).scroll(function(event){
         didScroll = true;
+        
+        if($(this).scrollTop() <= 69) {
+            $('#header .navigation-sticky').fadeOut(500);
+        }
     });
 
     setInterval(function() {
@@ -69,10 +73,9 @@ $(document).ready(function () {
 
         lastScrollTop = st;
         
-        if($(this).scrollTop() <= 69) {
-            $('#header .navigation-sticky').fadeOut(500);
-        }
+        
     }
+    
     
     /*******************
     **                **
