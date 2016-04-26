@@ -307,6 +307,7 @@ ul, ol {
 
 #project-view {
     position: fixed;
+    overflow: scroll;
     width: 100%;
     height: 100%;
     top: 0;
@@ -314,6 +315,38 @@ ul, ol {
     z-index: 1000;
     background: #fff;
 }
+
+.project-view-close {
+    float: right;
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: -15px;
+    color: #afafaf;
+}
+
+.project-view-title {
+    color: #DB7B10;
+    margin-top: 40px;
+}
+
+.project-view-title:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #DB7B10;
+    margin-top: 15px;
+}
+
+#project-view img {
+    float: right;
+    margin: 0 0 20px 25px;
+}
+
+body {
+    overflow: hidden;
+}
+
 
 /*** PROJECTS ***/
 
