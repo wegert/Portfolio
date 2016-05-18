@@ -139,6 +139,22 @@ $(document).ready(function () {
         $(this).children(".bio-inner").css( "display", "table");
     });
     
+    /*******************
+    **                **
+    **  PROJECT-VIEW  **
+    **                **
+    *******************/
+    
+    $(".project-item").on("click", function () {
+        $("#project-view").css( "display", "block" );
+        $("body").css( "overflow", "hidden" );
+    });
+    
+    $("#project-view").find(".close").on("click", function () {
+        $("#project-view").css( "display", "none" );
+        $("body").css( "overflow", "auto" );
+    });
+    
     
     /*******************
     **                **
