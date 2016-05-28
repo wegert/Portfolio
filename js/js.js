@@ -146,8 +146,16 @@ $(document).ready(function () {
     *******************/
     
     $(".project-item").on("click", function () {
+        $('#header .navigation-sticky').hide();
         $("#project-view").css( "display", "block" );
         $("body").css( "overflow", "hidden" );
+    });
+    
+    $(document).keydown(function(e) {
+         if (e.keyCode == 27) { // escape key maps to keycode `27`
+            $("#project-view").css( "display", "none" );
+            $("body").css( "overflow", "auto" );
+        }
     });
     
     $("#project-view").find(".close").on("click", function () {
