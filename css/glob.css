@@ -39,7 +39,7 @@ b {
 }
 
 a:hover {
-    color: #DB7B10!important;
+    color: #DB7B10;
     opacity: 0.8;
 }
 
@@ -54,6 +54,8 @@ ul, ol {
 
 .title h1 {
     margin: 20px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .typed-cursor{
@@ -345,12 +347,20 @@ ul, ol {
 
 /*** PROJECTS ***/
 
-#web, #design, #photography {
+#web, #design, #photography, #video {
     text-align: center;
     padding: 20px 0;
 }
 
-#web .content, #design .content, #photography .content {
+#photography, #web {
+    background-color: #DB7B10;
+}
+
+#photography .title h1, #web .title h1 {
+    color: white;
+}
+
+#web .content, #design .content, #photography .content, #video .content {
     display: inline;
     height: 100%;
     width: 60rem;
@@ -403,6 +413,10 @@ ul, ol {
     padding: 10px;
 }
 
+.project-item .hover-mask p.project-description {
+    display: none;
+}
+
 .project-item .hover-mask h2:after {
     content: "";
     display: block;
@@ -416,24 +430,37 @@ ul, ol {
     opacity: 1;
 }
 
+
+/*** CONATACT ***/
+
+#contact {
+    padding-bottom: 20px;
+}
+
+
 /*** FOOTER ***/
 
 #footer {
     text-align: center;
-    border-top: solid 2px #DB7B10;
+    background-color: #DB7B10;
 }
 
 #social li{
     display: inline-block;
     padding: 0 0;
-    margin: 20px 20px;
-    line-height: 1.5rem;
-    font-size: 40px;
+    margin: 15px 15px;
+    line-height: 1rem;
+    font-size: 35px;
     color: gray;
 }
 
 #social li a {
-    color: #DB7B10;
+    color: #eee;
+}
+
+#social a:hover {
+    color: #fff;
+    opacity: 1;
 }
 
 

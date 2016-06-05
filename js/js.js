@@ -44,7 +44,7 @@ $(document).ready(function () {
         return false;
     });
     
-    
+
     /*******************
     **                **
     **   NAV SCROLL   **
@@ -146,21 +146,33 @@ $(document).ready(function () {
     *******************/
     
     $(".project-item").on("click", function () {
+        //var projectTitle = $(this).find('.project-title').html();
+        //var projectDescription = $(this).find('.project-description').html();
+        
         $('#header .navigation-sticky').hide();
         $("#project-view").css( "display", "block" );
         $("body").css( "overflow", "hidden" );
+        
+        $("#project-view").find(".project-view-title").html($(this).find('.project-title').html());
+        $("#project-view").find(".project-view-text").html($(this).find('.project-description').html());
     });
     
     $(document).keydown(function(e) {
-         if (e.keyCode == 27) { // escape key maps to keycode `27`
+        if (e.keyCode == 27) { // escape key maps to keycode `27`
             $("#project-view").css( "display", "none" );
             $("body").css( "overflow", "auto" );
+            
+            $("#project-view").find(".project-view-title").html("");
+            $("#project-view").find(".project-view-text").html("");
         }
     });
     
     $("#project-view").find(".close").on("click", function () {
         $("#project-view").css( "display", "none" );
         $("body").css( "overflow", "auto" );
+        
+        $("#project-view").find(".project-view-title").html("");
+        $("#project-view").find(".project-view-text").html("");
     });
     
     
