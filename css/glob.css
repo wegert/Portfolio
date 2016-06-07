@@ -342,6 +342,9 @@ ul, ol {
 #project-view img {
     float: right;
     margin: 0 0 20px 25px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 15px;
 }
 
 .project-view-text {

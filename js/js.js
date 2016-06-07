@@ -152,6 +152,9 @@ $(document).ready(function () {
         
         $("#project-view").find(".project-view-title").html($(this).find('.project-title').html());
         $("#project-view").find(".project-view-text").html($(this).find('.project-description').html());
+        var bg = $(this).find('.project-image').css('background-image');
+        bg = bg.replace('url(','').replace(')','');
+        $("#project-view").find(".project-view-img").css("background-image", "url(" + bg + ")");
     });
     
     $(document).keydown(function(e) {
