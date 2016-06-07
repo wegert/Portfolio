@@ -145,10 +145,7 @@ $(document).ready(function () {
     **                **
     *******************/
     
-    $(".project-item").on("click", function () {
-        //var projectTitle = $(this).find('.project-title').html();
-        //var projectDescription = $(this).find('.project-description').html();
-        
+    $(".project-item").on("click", function () {        
         $('#header .navigation-sticky').hide();
         $("#project-view").css( "display", "block" );
         $("body").css( "overflow", "hidden" );

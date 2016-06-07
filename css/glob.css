@@ -377,7 +377,7 @@ ul, ol {
 .project-item {
     margin: 20px;
     width: 320px;
-    height: 240px;
+    height: 210px;
     text-align: center;
     display: inline-table;
 }
@@ -392,11 +392,13 @@ ul, ol {
     background-size: cover;
     background-position: center;
     display: inline-grid;
+    opacity: 0.85;
+    border-radius: 5px;
 }
 
 .overlay {
     width: 320px;
-    height: 240px;
+    height: 210px;
     display: inline-table;
     background-color: rgba(0, 0, 0, 0.7);
     vertical-align: middle;
@@ -432,6 +434,7 @@ ul, ol {
 
 .project-item:hover .overlay {
     opacity: 1;
+    border-radius: 5px;
 }
 
 
